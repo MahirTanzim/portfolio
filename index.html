@@ -1,202 +1,285 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahir Tanzim - Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mahir Tanzim</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <nav id="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Mahir Tanzim</h1>
-            <p>Computer Science Student | Problem Solver | ML Enthusiast</p>
-            <a href="#about" class="cta-button">Explore My Work</a>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <div class="profile-image">
-                <img src="assets/images/168372273.jpeg" alt="Mahir Tanzim's Profile Picture">
-            </div>
-            <div class="about-text">
-                <p>Hello! I'm <strong>Mahir Tanzim</strong>, a passionate final-year Computer Science student with an
-                    insatiable curiosity for understanding how technology works at its core. My journey in computer
-                    science is driven by a deep love for problem-solving and a strong foundation in mathematics and
-                    programming.</p>
-
-                <p>I'm particularly enthusiastic about <strong>competitive programming</strong>, where I continuously
-                    challenge myself to master complex <strong>data structures and algorithms</strong>. This passion has
-                    naturally led me to explore the fascinating world of <strong>Machine Learning</strong> and
-                    <strong>Data Science</strong>, where I'm currently diving deep into intelligent systems — from
-                    classical ML algorithms to cutting-edge Natural Language Processing applications.</p>
-            </div>
-        </div>
-    </section>
-
-    
-
-    <section id="projects">
-        <h2>Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Compiler-Based Scientific Calculator</h3>
-                <p>Developed a sophisticated scientific calculator that implements compiler design principles to parse
-                    and evaluate complex mathematical expressions. The project demonstrates advanced knowledge of
-                    lexical analysis, parsing, and expression evaluation.</p>
-                <div class="tech-stack">
-                    <span class="tech-tag">C++</span>
-                    <span class="tech-tag">Compiler Design</span>
-                    <span class="tech-tag">Parsing</span>
-                    <span class="tech-tag">Algorithms</span>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h3>Customer Sentiment Analysis using NLP</h3>
-                <p>Conducted comprehensive research on customer sentiment analysis using Natural Language Processing
-                    techniques. Implemented various ML models to classify customer feedback and extract meaningful
-                    insights from textual data.</p>
-                <div class="tech-stack">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">NLP</span>
-                    <span class="tech-tag">Machine Learning</span>
-                    <span class="tech-tag">Research</span>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h3>Handwritten Bangla Character Recognition</h3>
-                <p>Developed a deep learning system for recognizing handwritten Bangla characters using computer vision
-                    techniques. The project involved data preprocessing, CNN model design, and performance optimization
-                    for accurate character classification.</p>
-                <div class="tech-stack">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">TensorFlow</span>
-                    <span class="tech-tag">Computer Vision</span>
-                    <span class="tech-tag">Deep Learning</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <div class="education-timeline">
-            <div class="education-item">
-                <h3>Bachelor of Science in Computer Science</h3>
-                <p>Daffodil International University</p>
-                <p class="education-year">2022 - Present</p>
-            </div>
-
-            <div class="education-item">
-                <h3>Higher Secondary Certificate</h3>
-                <p>Nasirnagar Government College</p>
-                <p class="education-year">2017 - 2019</p>
-            </div>
-
-            <div class="education-item">
-                <h3>Secondary School Certificate</h3>
-                <p>Nasirnagar Ashutosh Pilot High School</p>
-                <p class="education-year">2012 - 2017</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Get In Touch</h2>
-        <div class="contact-content">
-            <p>I'm always open to discussing new opportunities, collaborations, or just having a conversation about
-                technology and innovation. Feel free to reach out!</p>
-            <div class="social-links">
-                <a href="#" class="social-link" id="github-link" target="_blank">
-                    <i class="fab fa-github"></i>
+<body class="bg-black text-light">
+    <header>
+        <nav class="navbar navbar-expand-lg mb-5">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="Assets/images/Logo-removebg-preview.png" alt="" class="w-25">
                 </a>
-                <a href="#" class="social-link" id="linkedin-link" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="#" class="social-link" id="facebook-link" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
-            </div>
-        </div>
-    </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>About</h3>
-                <p>I'm a passionate Computer Science student specializing in Machine Learning, Data Science, and
-                    competitive programming. Always eager to learn and tackle new challenges.</p>
-                <div class="footer-social">
-                    <a href="#" id="footer-github" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#" id="footer-linkedin" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="#" id="footer-facebook" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                    </a>
+                <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav align-items-lg-center gap-lg-4">
+                        <li class="nav-item"><a class="nav-link text-light" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="#">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="#">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="#">About</a></li>
+                        <li class="nav-item">
+                            <a href="Assets/docs/Resume_Mahir.pdf" download class="btn btn-info ms-lg-3">Resume <i
+                                    class="fa-solid fa-download"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <section class="container d-flex flex-column flex-lg-row   justify-content-between align-items-center gap-4">
+
+            <div class="information w-100 w-lg-50">
+                <h1 class="text-info">HI !</h1>
+                <h1 class="text-info">I am Mahir Tanzim</h1>
+                <h4>Web Developer || AI/ML Enthusiast || Competitive Programmer</h4>
+                <p>Hello! I'm Mahir Tanzim, a Computer Science graduate with an insatiable
+                    curiosity for understanding how technology works at its core. My journey in computer science is
+                    driven by a deep love for problem-solving and a strong foundation in mathematics and programming.
+                    I'm particularly enthusiastic about competitive programming, where I continuously challenge myself
+                    to master complex data structures and algorithms. This passion has naturally led me to explore the
+                    fascinating world of Machine Learning and Data Science, where I'm currently diving deep into
+                    intelligent systems — from classical ML algorithms to cutting-edge Natural Language Processing
+                    applications.</p>
+                <div class="d-flex gap-3">
+                    <a href="https://github.com/MahirTanzim" target="_blank"><i
+                            class="fa-brands fa-github fs-3 text-info"></i></a>
+                    <a href="https://www.linkedin.com/in/mahirtanzim/" target="_blank"><i
+                            class="fa-brands fa-linkedin fs-3 text-info"></i></a>
+                    <a href="youtube.com"><i class="fa-brands fa-youtube fs-3 text-info" target="_blank"></i></a>
+                    <a href="Assets/docs/Resume_Mahir.pdf" download> <button class="btn btn-info">Resume <i
+                                class="fa-solid fa-download"></i></button></a>
                 </div>
             </div>
 
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#about" style="color: inherit; text-decoration: none;">About Me</a></li>
-                    <li><a href="#skills" style="color: inherit; text-decoration: none;">Skills</a></li>
-                    <li><a href="#projects" style="color: inherit; text-decoration: none;">Projects</a></li>
-                    <li><a href="#education" style="color: inherit; text-decoration: none;">Education</a></li>
-                    <li><a href="#contact" style="color: inherit; text-decoration: none;">Contact</a></li>
-                </ul>
+            <div class="image w-100 w-lg-25 text-lg-end text-center">
+                <img src="Assets/images/168372273.jpg" class="img-fluid rounded" alt="">
             </div>
+        </section>
+    </header>
 
-            <div class="footer-section">
-                <h3>Skills</h3>
-                <ul>
-                    <li>Machine Learning</li>
-                    <li>Data Science</li>
-                    <li>Competitive Programming</li>
-                    <li>Natural Language Processing</li>
-                    <li>Computer Vision</li>
-                </ul>
+
+    <main>
+        <h1 class="text-center mt-5">Portfolio</h1>
+        <div class="project-1 mt-3 container border border-secondary">
+            <div class="d-flex flex-column flex-lg-row">
+                <div id="carouselExampleIndicators1" class="carousel slide w-100 w-lg-50 m-3">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Assets/images/w1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Assets/images/w2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Assets/images/w3.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="m-3 w-100 w-lg-50">
+                    <div class="d-flex gap-3 align-items-center">
+                        <h1>Academia BD</h1>
+                        <i class="fa-brands fa-github fs-2 text-info"></i>
+                    </div>
+                    <p class="">A full-featured e-learning web application built with Laravel, designed for students,
+                        teachers,
+                        and administrators. The platform enables instructors to create and manage courses, students to
+                        enroll and track learning progress through video-based content, and administrators to oversee
+                        users, courses, and system operations. It includes features such as course enrollment, progress
+                        tracking, reviews, blogging, analytics, and role-based dashboards for efficient learning
+                        management.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <div class="bg-secondary px-2 rounded-1">HTML</div>
+                        <div class="bg-secondary px-2 rounded-1">CSS</div>
+                        <div class="bg-secondary px-2 rounded-1">JS</div>
+                        <div class="bg-secondary px-2 rounded-1">MySQL</div>
+                        <div class="bg-secondary px-2 rounded-1">Laravel</div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="project-2 mt-3 container border border-secondary">
+            <div class=" d-flex flex-column flex-lg-row">
+                <div id="carouselExampleIndicators2" class="carousel slide w-100 w-lg-50 m-3">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active ">
+                            <img class="" src="Assets/images/m1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Assets/images/m2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Assets/images/m3.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="w-100 w-lg-50 m-3">
+                    <div class="d-flex gap-3 align-items-center">
+                        <h1>MediTrack</h1>
+                        <i class="fa-brands fa-github fs-2 text-info"></i>
+                    </div>
+                    <p>An IoT-based smart medicine management system built using ESP32 and Blynk, designed to ensure
+                        timely medication intake through automated scheduling and real-time notifications. The system
+                        supports multiple daily medicine schedules, provides visual and buzzer alerts, logs medication
+                        activity with timestamps, and enables remote monitoring via a mobile app—making it ideal for
+                        patients, caregivers, and healthcare tracking.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <div class="bg-secondary px-2 rounded-1">ESP32</div>
+                        <div class="bg-secondary px-2 rounded-1">C++</div>
+                        <div class="bg-secondary px-2 rounded-1">RTC3231</div>
+                        <div class="bg-secondary px-2 rounded-1">Blynk</div>
 
-            <div class="footer-section">
-                <h3>Get In Touch</h3>
-                <p>Let's connect and discuss opportunities, collaborations, or just have a chat about technology!</p>
-                <p>📧 mahir.tanzim@example.com</p>
-                <p>📱 +880 1234-567890</p>
+                    </div>
+
+                </div>
             </div>
         </div>
 
-        <div class="footer-bottom">
-            <p>&copy; 2025 Mahir Tanzim. Made with <span class="footer-love">❤️</span> and lots of caffeine.</p>
+        <h1 class="mt-5 mb-3 text-center">Skills and Education</h1>
+        <div class="container d-flex flex-column flex-lg-row justify-content-between">
+            <div>
+                <h2 class="mt-3 mb-3">Programming Language:</h2>
+                <div class="d-flex flex-wrap gap-2">
+                    <div class="bg-secondary px-2 rounded-1">C</div>
+                    <div class="bg-secondary px-2 rounded-1">C++</div>
+                    <div class="bg-secondary px-2 rounded-1">Python</div>
+                    <div class="bg-secondary px-2 rounded-1">MySQL</div>
+                    <div class="bg-secondary px-2 rounded-1">Dart</div>
+                </div>
+                <h2 class="mt-3 mb-3">Framework:</h2>
+                <div class="d-flex flex-wrap gap-2">
+                    <div class="bg-secondary px-2 rounded-1">Flask</div>
+                    <div class="bg-secondary px-2 rounded-1">Embedded C</div>
+                    <div class="bg-secondary px-2 rounded-1">Laravel</div>
+                    <div class="bg-secondary px-2 rounded-1">Flutter</div>
+                </div>
+                <h2 class="mt-3 mb-3">Core Concepts:</h2>
+                <div class="d-flex flex-wrap gap-2">
+                    <div class="bg-secondary px-2 rounded-1">Data Structure</div>
+                    <div class="bg-secondary px-2 rounded-1">Algorithm</div>
+                    <div class="bg-secondary px-2 rounded-1">Machine Learning</div>
+                    <div class="bg-secondary px-2 rounded-1">Exploratory Data Analysis</div>
+                    <div class="bg-secondary px-2 rounded-1">NLP</div>
+                    <div class="bg-secondary px-2 rounded-1">Image Processing</div>
+                    <div class="bg-secondary px-2 rounded-1">DBMS</div>
+                    <div class="bg-secondary px-2 rounded-1">System Design</div>
+                </div>
+                <h2 class="mt-3 mb-3">Core Concepts:</h2>
+                <div class="d-flex flex-wrap gap-2">
+                    <div class="bg-secondary px-2 rounded-1">Git</div>
+                    <div class="bg-secondary px-2 rounded-1">GitHub</div>
+                    <div class="bg-secondary px-2 rounded-1">Linux</div>
+                    <div class="bg-secondary px-2 rounded-1">TinkerCAD</div>
+                    <div class="bg-secondary px-2 rounded-1">MS Office</div>
+                    <div class="bg-secondary px-2 rounded-1">Cisco Packet Tracer</div>
+                </div>
+
+            </div>
+            <div class="text-center">
+                <h2 class="text-info mt-5 mt-lg-0 mb-3">My Education</h2>
+                <h4>B.Sc in CSE</h4>
+                <h4 class="text-secondary">Daffodil International University</h4>
+                <p>2022-2025</p>
+                <p class="text-info">_________________________________________________________</p>
+                <h4>Higher Secondary Certificate</h4>
+                <h4 class="text-secondary">Nasirnagar Govt. College</h4>
+                <p>2017-2019</p>
+
+            </div>
+        </div>
+
+        <h1 class="mt-5 mb-3 text-center">Contact With Me</h1>
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-5 col-10 border border-2 border-secondary p-4">
+                <div class="form-floating mb-3 ">
+                    <textarea class="form-control bg-dark text-light" placeholder="Leave a comment here"
+                        id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">
+                        <p class="text-light-emphasis">Please Type Your Name</p>
+                    </label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control bg-dark text-light" id="floatingInput"
+                        placeholder="name@example.com">
+                    <label for="floatingInput">
+                        <p class="text-light-emphasis">Please Type Your Email</p>
+                    </label>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control p-5 bg-dark text-light" placeholder="Leave a comment here"
+                        id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">
+                        <p class="text-light-emphasis">Type Your Message</p>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <footer class="p-5">
+        <div class="p-5">
+            <h5 class="text-center">Copyright @ 2026 | Mahir Tanzim</h5>
+            <h5 class="text-center">Daffodil International University</h5>
+            <div class="d-flex gap-3 justify-content-center mt-3">
+                <i class="fa-brands fa-github fs-3 text-info"></i>
+                <i class="fa-brands fa-linkedin fs-3 text-info"></i>
+                <i class="fa-brands fa-youtube fs-3 text-info"></i>
+            </div>
         </div>
     </footer>
-
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
