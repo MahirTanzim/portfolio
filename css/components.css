@@ -1,0 +1,139 @@
+/* COMPONENTS: buttons, panels, skill bars, project cards, scene. */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 10px 16px;
+  border: 1px solid var(--green);
+  color: var(--green);
+  background: #09140e;
+  transition: .18s;
+  font: inherit;
+  cursor: pointer;
+}
+.btn:hover { background: var(--green); color: #07100b; transform: translateY(-2px); }
+.btn.secondary { color: var(--cream); border-color: var(--cream); }
+.btn.secondary:hover { background: var(--cream); color: #07100b; }
+
+.panel {
+  border: 1px solid var(--line);
+  box-shadow: 0 0 0 1px #1d4736 inset;
+  padding: 16px 18px;
+  background: linear-gradient(145deg, #09120fef, #060b09ef);
+  scroll-margin-top: 20px;
+}
+.panel h2 {
+  font: 30px "VT323", monospace;
+  color: var(--green);
+  margin: 0 0 11px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line-soft);
+  text-shadow: 0 0 8px #5cf27c33;
+}
+.panel h2 .mark { margin-right: 9px; color: var(--gold); }
+.panel p { margin: 0 0 14px; }
+
+/* About */
+.facts { display: grid; gap: 7px; border-top: 1px solid var(--line-soft); padding-top: 12px; color: var(--mint); }
+.facts span { color: var(--cream); margin-left: 8px; }
+
+/* Skills: RPG-style bars */
+.skill-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+.skill-group h3 { margin: 0 0 8px; font-size: 15px; color: var(--mint); letter-spacing: 1px; text-transform: uppercase; }
+.skill-row { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 3px 0; }
+.bar { letter-spacing: 1px; color: var(--green); white-space: nowrap; }
+.bar .off { color: #24523a; }
+
+/* Projects */
+.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+.project {
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  gap: 14px;
+  padding: 14px;
+  border: 1px solid var(--line-soft);
+  background: #08110d;
+  transition: .18s;
+}
+.project:hover { border-color: var(--green); box-shadow: 0 0 14px #5cf27c22; transform: translateY(-2px); }
+.project-art {
+  display: grid;
+  place-items: center;
+  font: 26px "VT323", monospace;
+  color: var(--green);
+  min-height: 74px;
+  background: #111c31;
+  border: 1px solid #283b83;
+  text-shadow: 2px 2px 0 #124b2b;
+}
+.project h3 { margin: 0; font-size: 19px; color: var(--cream); }
+.project p { margin: 4px 0 8px; font-size: 14px; color: var(--muted); }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.tag { border: 1px solid #2a8754; padding: 1px 7px; font-size: 12px; color: var(--mint); background: #0a1912; }
+.links { display: flex; gap: 14px; }
+.links a { color: var(--green); text-decoration: underline; text-underline-offset: 3px; }
+.links a:hover { color: var(--gold); }
+
+/* Experience */
+.job { padding: 10px 0; border-bottom: 1px solid var(--line-soft); }
+.job:last-child { border-bottom: 0; }
+.job-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px; }
+.job-head strong { color: var(--cream); }
+.job-head .period { color: var(--dim); }
+.job ul { margin: 6px 0 0; padding-left: 20px; color: var(--muted); }
+
+/* Footer icons */
+.socials { display: flex; gap: 8px; }
+.socials a {
+  display: grid;
+  place-items: center;
+  min-width: 34px;
+  height: 34px;
+  padding: 0 8px;
+  border: 1px solid var(--green);
+  font-size: 14px;
+}
+.socials a:hover { color: var(--bg); background: var(--green); }
+.cursor { display: inline-block; color: var(--green); animation: blink 1s steps(2, start) infinite; }
+@keyframes blink { to { visibility: hidden; } }
+
+/* Hero scene (pure CSS, no emoji) */
+.scene {
+  min-height: 350px;
+  height: 100%;
+  max-height: 410px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #344a9a;
+  background: linear-gradient(#111c4c 0%, #40266b 49%, #111b2d 78%, #101511 100%);
+  box-shadow: 0 0 0 6px #0b101d, 0 0 0 7px #344a9a;
+}
+.stars {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(#f7e6bb 1px, transparent 1.5px), radial-gradient(#bc83f5 1px, transparent 1.5px);
+  background-size: 49px 43px, 71px 61px;
+  background-position: 7px 11px, 21px 2px;
+  opacity: .7;
+}
+.moon { position: absolute; width: 58px; height: 58px; border-radius: 50%; right: 17%; top: 12%; background: #f5df9f; box-shadow: 0 0 25px #f2d88b55; }
+.moon::after { content: ""; position: absolute; width: 14px; height: 11px; background: #dfc78c; top: 16px; left: 12px; box-shadow: 18px 21px #dfc78c, 27px 5px #dfc78c; }
+.city {
+  position: absolute; bottom: 27%; left: 0; right: 0; height: 38%;
+  background: #11162f;
+  clip-path: polygon(0 45%,7% 45%,7% 30%,13% 30%,13% 54%,20% 54%,20% 15%,27% 15%,27% 45%,36% 45%,36% 8%,42% 8%,42% 47%,51% 47%,51% 25%,57% 25%,57% 43%,65% 43%,65% 0,70% 0,70% 45%,80% 45%,80% 17%,87% 17%,87% 45%,93% 45%,93% 31%,100% 31%,100% 100%,0 100%);
+}
+.desk { position: absolute; left: 5%; right: 5%; bottom: 11%; height: 13%; background: #5a315d; border-top: 7px solid #bd6e8c; box-shadow: 0 10px #211426; }
+.monitor { position: absolute; bottom: 25%; width: 42%; height: 29%; background: #10192c; border: 6px solid #283b83; box-shadow: inset 0 0 0 2px #5066bd; }
+.monitor.left { left: 13%; }
+.monitor.right { right: 11%; }
+.monitor::before {
+  content: ""; position: absolute; inset: 12% 10%;
+  background: repeating-linear-gradient(0deg, #5ee2b5 0 2px, transparent 2px 11px), repeating-linear-gradient(90deg, transparent 0 25px, #3d5799 25px 29px);
+  opacity: .8;
+}
+.person { position: absolute; bottom: 12%; left: 42%; width: 20%; height: 36%; background: #141b38; border: 7px solid #080e1c; border-bottom: 0; border-radius: 45% 45% 0 0; z-index: 2; }
+.person::before { content: ""; position: absolute; width: 60%; height: 42%; top: -30%; left: 20%; border-radius: 40% 40% 20% 20%; background: #080b17; box-shadow: -8px -4px 0 #080b17, 8px -3px 0 #080b17; }
+.mug { position: absolute; bottom: 24%; right: 6%; width: 18px; height: 16px; background: #f3edcf; z-index: 3; box-shadow: 18px 4px 0 -4px #f3edcf; }
+.plant { position: absolute; bottom: 24%; left: 6%; width: 18px; height: 34px; background: #2f9e55; z-index: 3; box-shadow: -10px 10px 0 #2f9e55, 10px 6px 0 #2f9e55, 0 28px 0 8px #9c5a3c; }

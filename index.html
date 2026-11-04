@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#070d0b">
+<meta name="description" content="Software developer portfolio: Java, Spring Boot, React and PostgreSQL projects.">
+<title>Portfolio</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23070d0b'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%235cf27c' font-family='monospace'%3E%3E_%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="shell">
+  <header class="topbar" id="topbar"></header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <main id="main">
+      <section class="hero" id="home"></section>
+      <section class="panel" id="about"></section>
+      <section class="panel" id="skills"></section>
+      <section class="panel" id="projects"></section>
+      <section class="panel" id="experience"></section>
+    </main>
+  </div>
+
+  <footer class="footer" id="contact"></footer>
+  <div class="smallprint" id="smallprint"></div>
+</div>
+
+<!-- Order matters: data first, then the code that uses it -->
+<script src="js/data.js"></script>
+<script src="js/render.js"></script>
+<script src="js/effects.js"></script>
+</body>
+</html>
